@@ -1,8 +1,8 @@
-# CP_Drums_Generation
+# Conditional Drums Generation using Compound Word Representations
 
 ## Description
 
-Conditional Drums Generation using Compound Word Representations: A seq2seq architecture where a BiLSTM Encoder receives information about the conditioning parameters (i.e., accompanying tracks and musical attributes), while a Transformer-based Decoder with relative global attention produces the generated drum sequences. For further details please read and cite our paper:
+A seq2seq architecture where a BiLSTM Encoder receives information about the conditioning parameters (i.e., accompanying tracks and musical attributes), while a Transformer-based Decoder with relative global attention produces the generated drum sequences. For further details please read and cite our paper:
 
 ##### Makris D., Guo Z, Kaliakatsos-Papakostas N., Herremans D., “Conditional Drums Generation using Compound Word Representations” to appear EvoMUSART, 2022.
 
