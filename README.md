@@ -19,7 +19,7 @@ A seq2seq architecture where a BiLSTM Encoder receives information about the con
 
 ##### 1. Pre-processing
 
--pre_process.py: Create CP representations using your own MIDI data. However, we offer the pre-processed dataset used in the paper. In that case you do not need to run this file.
+-pre_process.py: Create CP representations using your own MIDI data. However, we offer the pre-processed dataset used in the paper (rar inside the folder). In that case you do not need to run this file.
 -post_process.py: Convert the CP data to one-hot encoding streams ready for training
 
 ##### 2. Training
