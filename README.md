@@ -1,1 +1,41 @@
 # CP_Drums_Generation
+
+## Description
+
+Conditional Drums Generation using Compound Word Representations: A seq2seq architecture where a BiLSTM Encoder receives information about the conditioning parameters (i.e., accompanying tracks and musical attributes), while a Transformer-based Decoder with relative global attention produces the generated drum sequences. For further details please read and cite our paper:
+
+##### Makris D., Guo Z, Kaliakatsos-Papakostas N., Herremans D., “Conditional Drums Generation using Compound Word Representations” to appear EvoMUSART, 2022.
+
+## Prerequisites
+
+-Tensorflow 2.x  <br />
+-music21 6.x or lower <br />
+-pretty_midi <br />
+-pypianoroll <br />
+-numpy <br />
+-sklearn <br />
+
+## Usage
+
+##### 1. Pre-processing
+
+-pre_process.py: Create CP representations using your own MIDI data. However, we offer the pre-processed dataset used in the paper. In that case you do not need to run this file.
+-post_process.py: Convert the CP data to one-hot encoding streams ready for training
+
+##### 2. Training
+
+-model_train.py: Train the model using the hyper-parameters noted in the paper.
+
+##### 3. Inference
+
+-model_train.py: Generate conditional drums with your own data. The input MIDI files (./midi_in/) must have two tracks (1st Guitar, 2nd Bass) and with a maximum length of 16 bars. We also offer pre-trained model weights that can be downloaded from here (place them inside ./aux_files/checkpoints):
+
+##### 4. Samples
+
+Random samples from the experimental setup
+
+## Reference
+
+If you use this library, please cite the following work:
+
+##### Makris D., Guo Z, Kaliakatsos-Papakostas N., Herremans D., “Conditional Drums Generation using Compound Word Representations” to appear EvoMUSART, 2022.
