@@ -17,20 +17,20 @@ A seq2seq architecture where a BiLSTM Encoder receives information about the con
 
 ## Usage
 
-##### 1. Pre-processing
+#### 1. Pre-processing
 
 -pre_process.py: Create CP representations using your own MIDI data. However, we offer the pre-processed dataset used in the paper (rar inside the folder). In that case you do not need to run this file.
 -post_process.py: Convert the CP data to one-hot encoding streams ready for training
 
-##### 2. Training
+#### 2. Training
 
 -model_train.py: Train the model using the hyper-parameters noted in the paper.
 
-##### 3. Inference
+#### 3. Inference
 
 -model_train.py: Generate conditional drums with your own data. The input MIDI files (./midi_in/) must have two tracks (1st Guitar, 2nd Bass) and with a maximum length of 16 bars. We also offer pre-trained model weights that can be downloaded from [here.](https://drive.google.com/file/d/1avyXoSi1mXPONwInKu0hBWbXCHF8CgjC/view?usp=sharing) Place them inside ./aux_files/checkpoints.
 
-##### 4. Samples
+#### 4. Samples
 
 Random samples from the experimental setup
 
