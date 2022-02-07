@@ -28,7 +28,7 @@ A seq2seq architecture where a BiLSTM Encoder receives information about the con
 
 #### 3. Inference
 
--model_train.py: Generate conditional drums with your own data. The input MIDI files (./midi_in/) must have two tracks (1st Guitar, 2nd Bass) and with a maximum length of 16 bars. We also offer pre-trained model weights that can be downloaded from [here.](https://drive.google.com/file/d/1avyXoSi1mXPONwInKu0hBWbXCHF8CgjC/view?usp=sharing) Place them inside ./aux_files/checkpoints.
+-gen_drums.py: Generate conditional drums with your own data. The input MIDI files (./midi_in/) must have two tracks (1st Guitar, 2nd Bass) and with a maximum length of 16 bars. We also offer pre-trained model weights that can be downloaded from [here.](https://drive.google.com/file/d/1avyXoSi1mXPONwInKu0hBWbXCHF8CgjC/view?usp=sharing) Place them inside ./aux_files/checkpoints.
 
 #### 4. Samples
 
