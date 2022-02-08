@@ -427,7 +427,7 @@ def drums_trans_ev_model_tf(TransEncoders):
     dec_seq_length = 545
     #for relative attention
 
-    rel_dec_seq = int(dec_seq_length/2) 
+    rel_dec_seq = dec_seq_length #int(dec_seq_length/2) 
 
     model = HybridTransformer(num_layers=num_layers, d_model_enc1=d_model_enc1, d_model_enc2=d_model_enc2, 
                           d_model_enc3=d_model_enc3, d_model_enc4=d_model_enc4, d_model_enc5=d_model_enc5, 
